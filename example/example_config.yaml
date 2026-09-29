@@ -1,0 +1,33 @@
+prep:
+    "pacbio"
+data_code:
+        "example"
+metadata:
+        "example/example_metadata.tsv"
+ref_genome:
+        # omit the .fa
+        "/sc/arion/projects/ad-omics/data/references/hg38_reference/GENCODE/gencode.v38.primary_assembly/GRCh38.primary_assembly.genome" 
+ref_gtf:
+        # cannot be gzipped
+        "/sc/arion/projects/ad-omics/data/references/hg38_reference/GENCODE/gencode.v38.primary_assembly/gencode.v38.primary_assembly.annotation.gtf"
+out_folder:
+        "example_results"
+
+longcallr_path:
+        "/sc/arion/projects/ad-omics/data/software/longcallR"
+samtools_path:
+        "/hpc/packages/minerva-rocky9/samtools/1.21/bin/samtools"
+
+# phased VCF for phasing - to ADD
+
+
+# for matching GWAS to ASE, ASJ
+gwas:
+  - Bellenguez_2021
+  - VanRheenenALL_2021
+  - GP2_2025
+  - Marioni_2018
+  - Jansen_2018
+  - Kunkle_2019
+  - Farrell_2024
+  - TrubetskoyEUR_2022
